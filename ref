@@ -1,0 +1,43 @@
+<div className="rounded-2xl border border-cyan-400/20 bg-slate-900/30 p-8 backdrop-blur-md">
+    <div>
+            <h2 className="mb-6 text-2xl font-semibold text-cyan-400">
+              Get In Touch
+            </h2>
+
+            <div className="space-y-5 text-slate-300">
+              <div>
+                <h3 className="font-medium text-cyan-400">Email</h3>
+                <p>kannan11071985@gmail.com</p>
+              </div>
+
+              <div>
+                <h3 className="font-medium text-cyan-400">Phone</h3>
+                <p>+91 973811897</p>
+              </div>
+
+              <div>
+                <h3 className="font-medium text-cyan-400">Location</h3>
+                <p>Chennai, Tamilnadu, India</p>
+              </div>
+
+              <div className="flex gap-4 pt-4">
+                <a
+                  href="https://www.linkedin.com/in/kannayira-moorthy-marimuthu-0146b0198"
+                  className="rounded-lg border border-slate-700 bg-slate-900/60 px-4 py-2 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/kannan1107"
+                  className="rounded-lg border border-slate-700 bg-slate-900/60 px-4 py-2 transition hover:border-cyan-400/50 hover:text-cyan-400"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+        </div>
+        <div>
+            <img src={heroImage} class="round-50"/>
+        </div>
+          </div>

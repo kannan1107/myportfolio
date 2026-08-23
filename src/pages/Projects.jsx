@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { FaGithub as Github } from "react-icons/fa";
-import offices from "../assets/office.JPG";
-import events from "../assets/event.JPG";
-import loans from "../assets/loan.PNG";
+import offices from "../assets/office.jpg";
+import events from "../assets/event.jpg";
+import loans from "../assets/loan.png";
 
 const projects = [
   {

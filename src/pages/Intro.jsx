@@ -218,7 +218,7 @@ const Intro = () => {
           <div className="relative flex justify-center lg:justify-end">
             {/* Floating Glow */}
             <div
-              className="absolute h-72 w-72 rounded-full
+              className="absolute h-80 w-80 rounded-full
               bg-cyan-500/10 blur-3xl"
             />
 
@@ -226,7 +226,7 @@ const Intro = () => {
               <img
                 src={heroImage}
                 alt="My avatar"
-                className="h-170 w-170 rounded-full"
+                className="h-140 w-140 rounded-full"
               />
             </div>
           </div>

@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api": "https://portfolioapi-q844.onrender.com",
+      "/api": "http://localhost:5000",
     },
   },
 });

@@ -1,6 +1,8 @@
 import react, { useEffect, useState } from "react";
 import { appApi } from "../features/ApplicationApi";
 import heroImage from "../assets/hero.png";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 function Contact() {
   const [mouse, setMouse] = useState({ x: 50, y: 50 });
@@ -118,17 +120,23 @@ function Contact() {
 
                   <div className="flex gap-4 pt-4">
                     <a
-                      href="https://www.linkedin.com/in/kannayira-moorthy-marimuthu-0146b0198"
-                      className="rounded-lg border border-slate-700 bg-slate-900/60 px-4 py-2 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
+                      href="https://www.linkedin.com/in/kannayira-moorthy-marimuthu-0146b019"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                      className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
                     >
-                      LinkedIn
+                      <FaLinkedin size={22} />
                     </a>
 
                     <a
                       href="https://github.com/kannan1107"
-                      className="rounded-lg border border-slate-700 bg-slate-900/60 px-4 py-2 transition hover:border-cyan-400/50 hover:text-cyan-400"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub"
+                      className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
                     >
-                      GitHub
+                      <FaGithub size={22} />
                     </a>
                   </div>
                 </div>
@@ -141,6 +149,16 @@ function Contact() {
                   className="h-70 w-70 rounded-full object-cover  "
                 />
               </div>
+              <button className="bg-green-900 text-xl rounded-2xl">
+                CERTIFICATIONS -
+              </button>
+              <p>
+                Professional Certificate in
+                <b className="text-green-900">
+                  Full Stack Development – IIT-M Pravartak & GUVI | HCL
+                </b>{" "}
+                (with AI Tools).
+              </p>
             </div>
           </div>
 

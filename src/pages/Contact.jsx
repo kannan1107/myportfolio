@@ -153,7 +153,7 @@ function Contact() {
                 CERTIFICATIONS -
               </button>
               <p>
-                Professional Certificate in
+                Professional Certificate in 
                 <b className="text-green-900">
                   Full Stack Development – IIT-M Pravartak & GUVI | HCL
                 </b>{" "}

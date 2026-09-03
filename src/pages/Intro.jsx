@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import heroImage from "../assets/cartoon.png";
-import resume from "../assets/KannayiraMoorthy.PDF";
+import resume from "../assets/KannayiraMoorthy.pdf";
 import { FaGithub } from "react-icons/fa";
 
 const Intro = () => {

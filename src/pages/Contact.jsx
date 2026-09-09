@@ -95,13 +95,13 @@ function Contact() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Contact Information */}
-          <div className="rounded-2xl border border-cyan-400/20 bg-slate-900/30 p-8 backdrop-blur-md">
+          <div className="rounded-2xl border border-cyan-400/20 bg-slate-900/30 p-8 backdrop-blur-md a">
+            <h2 className="mb-6 text-center text-2xl font-semibold text-cyan-400">
+              Contact Information
+            </h2>
+
             <div className="grid items-center gap-6 md:grid-cols-2">
               <div>
-                <h2 className="mb-6 text-2xl font-semibold text-cyan-400">
-                  Get In Touch
-                </h2>
-
                 <div className="space-y-5 text-slate-300">
                   <div>
                     <h3 className="font-medium text-cyan-400">Email</h3>
@@ -149,16 +149,6 @@ function Contact() {
                   className="h-70 w-70 rounded-full object-cover  "
                 />
               </div>
-              <button className="bg-green-900 text-xl rounded-2xl">
-                CERTIFICATIONS -
-              </button>
-              <p>
-                Professional Certificate in
-                <b className="text-green-900">
-                  Full Stack Development – IIT-M Pravartak & GUVI | HCL
-                </b>{" "}
-                (with AI Tools).
-              </p>
             </div>
           </div>
 

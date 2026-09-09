@@ -48,6 +48,16 @@ const skillGroups = [
   },
 ];
 
+const certifications = [
+  {
+    number: "01",
+    title: "Professional Certificate ",
+    issuer: "IIT-M Pravartak & GUVI | HCL",
+    focus:
+      "IIT-M Pravartak & GUVI | HCL Full Stack Development – IIT-M Pravartak & GUVI | HCL (with AI Tools).",
+  },
+];
+
 function Skills() {
   const [mouse, setMouse] = useState({
     x: 50,
@@ -278,6 +288,54 @@ function Skills() {
         </div>
 
         {/* =========================================
+            CERTIFICATIONS
+        ========================================== */}
+
+        <div className="mt-16">
+          <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+                Certifications.
+              </h3>
+            </div>
+          </div>
+
+          <div className="grid gap-5 ">
+            {certifications.map((certification) => (
+              <article
+                key={certification.title}
+                className="group relative overflow-hidden rounded-2xl border border-emerald-400/20 bg-slate-900/30 p-7 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:bg-slate-900/50 hover:shadow-2xl"
+              >
+                <div className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-emerald-400 opacity-0 blur-[70px] transition-all duration-500 group-hover:opacity-20" />
+
+                <div className="relative flex items-start justify-between gap-6">
+                  <span className="rounded-full border border-emerald-400/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-400">
+                    Certified
+                  </span>
+                </div>
+
+                <h4 className="relative mt-9 max-w-xl text-xl font-bold leading-snug text-white">
+                  {certification.title}
+                </h4>
+
+                <p className="relative mt-2 text-sm leading-6 text-slate-400">
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                  {certification.focus} -{" "}
+                  <b className="text-green-400">
+                    issue by {certification.issuer}
+                  </b>
+                </p>
+
+                <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-emerald-400 transition-all duration-500 group-hover:w-full" />
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* =========================================
             CORE STACK
         ========================================== */}
 
@@ -293,6 +351,7 @@ function Skills() {
             className="absolute right-0 top-0 h-32 w-32
             rounded-full bg-cyan-400/5 blur-3xl"
           />
+          <div className="grid gap-5 md:grid-cols-2"></div>
 
           <div
             className="relative flex flex-col gap-6
@@ -346,6 +405,7 @@ function Skills() {
           <span className="text-lg leading-none text-cyan-400">↓</span>
         </a>
       </div>
+      <div className=""></div>
     </section>
   );
 }

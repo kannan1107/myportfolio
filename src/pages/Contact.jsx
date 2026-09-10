@@ -1,6 +1,5 @@
 import react, { useEffect, useState } from "react";
 import { appApi } from "../features/ApplicationApi";
-import heroImage from "../assets/hero.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
@@ -100,54 +99,42 @@ function Contact() {
               Contact Information
             </h2>
 
-            <div className="grid items-center gap-6 md:grid-cols-2">
+            <div className="flex flex-col items-center gap-5 text-slate-300 text-center pt-12">
               <div>
-                <div className="space-y-5 text-slate-300">
-                  <div>
-                    <h3 className="font-medium text-cyan-400">Email</h3>
-                    <p>kannan11071985@gmail.com</p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-medium text-cyan-400">Phone</h3>
-                    <p>+91 973811897</p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-medium text-cyan-400">Location</h3>
-                    <p>Chennai, Tamilnadu, India</p>
-                  </div>
-
-                  <div className="flex gap-4 pt-4">
-                    <a
-                      href="https://www.linkedin.com/in/kannayira-moorthy-marimuthu-0146b019"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                      className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
-                    >
-                      <FaLinkedin size={22} />
-                    </a>
-
-                    <a
-                      href="https://github.com/kannan1107"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="GitHub"
-                      className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
-                    >
-                      <FaGithub size={22} />
-                    </a>
-                  </div>
-                </div>
+                <h3 className="font-medium text-cyan-400">Email</h3>
+                <p>kannan11071985@gmail.com</p>
               </div>
 
-              <div className="flex justify-center">
-                <img
-                  src={heroImage}
-                  alt="Contact profile"
-                  className="h-70 w-70 rounded-full object-cover  "
-                />
+              <div>
+                <h3 className="font-medium text-cyan-400">Phone</h3>
+                <p>+91 973811897</p>
+              </div>
+
+              <div>
+                <h3 className="font-medium text-cyan-400">Location</h3>
+                <p>Chennai, Tamilnadu, India</p>
+              </div>
+
+              <div className="flex justify-center gap-4 pt-4">
+                <a
+                  href="https://www.linkedin.com/in/kannayira-moorthy-marimuthu-0146b019"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
+                >
+                  <FaLinkedin size={22} />
+                </a>
+
+                <a
+                  href="https://github.com/kannan1107"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="rounded-lg border border-slate-700 bg-slate-900/60 p-3 transition hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950"
+                >
+                  <FaGithub size={22} />
+                </a>
               </div>
             </div>
           </div>
